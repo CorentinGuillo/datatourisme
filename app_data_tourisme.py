@@ -237,7 +237,7 @@ def main():
 
 
 
-		col1, col2, col3, col4, col5 = st.beta_columns(5)   		
+		col1, col2, col3, col4, col5 = st.beta_columns((1,1,1,1,1))   		
    				
 		with col1:
    		   
@@ -630,8 +630,8 @@ def main():
 			st.map(data_erreur_map)
 
 			st.markdown("<h1 style='text-align: center; font-size:29px; color:#57565B;'>Répartition des sous-categories de la categorie Lieu d'intérêt</h1>", unsafe_allow_html=True)
-			x = list(data3.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])
-			y=list(data3.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])
+			x = list(data3.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index)
+			y=list(data3.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc)
 			fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
 			fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
 			st.plotly_chart(fig)
