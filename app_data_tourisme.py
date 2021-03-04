@@ -438,11 +438,12 @@ def main():
 		st.markdown(""" # **Répartition des sous-categories** """)
 
 
-		x = list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts())
-		y=list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts())
+		x = list(data2.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index)
+		y=list(data2.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc)
 		fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
 		fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
 		st.plotly_chart(fig)
+
 
 
 
@@ -602,14 +603,14 @@ def main():
 	choice1 = st.sidebar.radio("", menu1)
 
 	if choice1 == "Maintenance":
-		choice==""
+		choice=="décoché"
 
 #		image = Image.open('DATAtourisme.png')
 		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
 
 
 		mdp = st.text_input("Mot de passe ?",type="password")
-
+		st.write('Dîtes "bonjour" ;)')
 
 		st.write()
 		if mdp == "bonjour":
@@ -639,7 +640,7 @@ def main():
 #			fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
 #			st.plotly_chart(fig)
 
-#			st.markdown("<h1 style='text-align: center; font-size:29px; color:#57565B;'>Répartition des sous-categories de la categorie Lieu Evénement</h1>", unsafe_allow_html=True)
+#			st.markdown("<h1 style='text-align: center; font-size:29px; color:#57565B;'>Répartition des sous-categories de la categorie Evénement</h1>", unsafe_allow_html=True)
 #			x = list(data2.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])
 #			y=list(data2.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])
 #			fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
