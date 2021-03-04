@@ -159,6 +159,8 @@ def main():
 		
 	menu = ["_","Team","Lieu d'intérêt", "Evénement", "Produit", "Itinéraire"]
 	choice = st.sidebar.radio("", menu)
+	menu1 = ["_","Maintenance"]
+	choice = st.sidebar.radio("", menu1)
 
 	
 
@@ -613,8 +615,7 @@ def main():
 #		image = Image.open('WCS.png')
 #		st.image(image, use_column_width = True, output_format = 'PNG')
 
-	menu1 = ["_","Maintenance"]
-	choice = st.sidebar.radio("", menu1)
+
 
 	if choice == "Maintenance":
 
