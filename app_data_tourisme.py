@@ -295,8 +295,8 @@ def main():
 
 
 
-		image = Image.open('DATAtourisme.png')
-		st.image(image, use_column_width = True, output_format = 'PNG')
+#		image = Image.open('DATAtourisme.png')
+		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
 
 		st.markdown("<h1 style='text-align:center; font-size:29px; color: #57565B;'>Produit</h1>", unsafe_allow_html=True)
 
@@ -385,8 +385,8 @@ def main():
 
 
 
-		image = Image.open('DATAtourisme.png')
-		st.image(image, use_column_width = True, output_format = 'PNG')
+#		image = Image.open('DATAtourisme.png')
+		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
 
 		st.markdown("<h1 style='text-align:center; font-size:29px; color: #57565B;'>Evénement</h1>", unsafe_allow_html=True)
 
@@ -463,8 +463,8 @@ def main():
 
 
 
-		image = Image.open('DATAtourisme.png')
-		st.image(image, use_column_width = True, output_format = 'PNG')
+#		image = Image.open('DATAtourisme.png')
+		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
 
 
 		st.markdown("<h1 style='text-align:center; font-size:29px; color: #57565B;'>Lieux d'intérêt</h1>", unsafe_allow_html=True)
@@ -535,8 +535,8 @@ def main():
 
 
 
-		image = Image.open('DATAtourisme.png')
-		st.image(image, use_column_width = True, output_format = 'PNG')
+#		image = Image.open('DATAtourisme.png')
+		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
 
 
 		st.markdown("<h1 style='text-align:center; font-size:29px; color: #57565B;'>Itinéraire</h1>", unsafe_allow_html=True)
@@ -596,8 +596,8 @@ def main():
 
 	elif choice == "Maintenance":
 
-		image = Image.open('DATAtourisme.png')
-		st.image(image, use_column_width = True, output_format = 'PNG')
+#		image = Image.open('DATAtourisme.png')
+		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
 
 
 		mdp = st.text_input("Mot de passe ?",type="password")
