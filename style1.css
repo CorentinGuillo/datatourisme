@@ -4,7 +4,7 @@ body {
 }
 
 section[data-testid="stSidebar"] > div {
-    background-color: #A11F40;
+    background-color: lightgrey;
     background-image: none;
     font-color: #FFFFFF;
 }
