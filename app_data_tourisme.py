@@ -248,9 +248,9 @@ def main():
 
 		with col2:
    		   st.image("ab.jpg", use_column_width=True)
-		   st.markdown("""**Amar&#8239;Barache**""")
-		   st.markdown("""*Equipe Tech*""")
-		   st.markdown(link5, unsafe_allow_html=True)
+   		   st.markdown("""**Amar&#8239;Barache**""")
+   		   st.markdown("""*Equipe Tech*""")
+   		   st.markdown(link5, unsafe_allow_html=True)
 		
 
 		with col3:
