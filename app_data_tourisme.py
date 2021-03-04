@@ -280,7 +280,7 @@ def main():
 		page_bg_img = '''
 		<style>
 		body {
-		background-color: lightgrey;
+		background-color: #FFF6F6;
 		background-size: cover;
 		}
 		</style>
