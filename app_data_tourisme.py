@@ -154,8 +154,8 @@ def main():
 		
 
 
-		image = Image.open('DATAtourisme.png')
-		st.image(image, use_column_width = True, output_format = 'PNG')
+#		image = Image.open('DATAtourisme.png')
+		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
 
 
 		st.markdown("<h1 style='text-align: center; font-size:15px; color:#A11F40;'>Qu'est ce que DATAtourisme ?</h1>", unsafe_allow_html=True)   
