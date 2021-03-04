@@ -8,3 +8,9 @@ section[data-testid="stSidebar"] > div {
     background-image: none;
     font-color: #FFFFFF;
 }
+
+section[data-testid="row-widget stRadio"] > div {
+    background-color: lightgrey;
+    background-image: none;
+    font-color: #FFFFFF;
+}
