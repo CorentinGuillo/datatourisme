@@ -280,7 +280,7 @@ def main():
 		page_bg_img = '''
 		<style>
 		body {
-		background-image: url("https://i.ibb.co/cD9CndX/nuages2.jpg");
+		background-color: lightgrey;
 		background-size: cover;
 		}
 		</style>
