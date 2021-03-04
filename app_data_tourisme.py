@@ -1,14 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import altair as alt 
-from pathlib import Path
 import plotly.express as px 
-import geopandas as gpd
 import streamlit.components.v1 as components
 import json
 from urllib.request import urlopen
-from PIL import Image
 import base64
 import csv
 
