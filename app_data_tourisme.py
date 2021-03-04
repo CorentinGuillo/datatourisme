@@ -273,8 +273,8 @@ def main():
 
 
 
-		image = Image.open('WCS.png')
-		st.image(image, use_column_width = True, output_format = 'PNG')
+#		image = Image.open('WCS.png')
+		st.image('WCS.png', use_column_width = True, output_format = 'PNG')
 
 
 		page_bg_img = '''
