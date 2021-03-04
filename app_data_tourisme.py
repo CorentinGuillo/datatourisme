@@ -293,7 +293,7 @@ def main():
 
 
 	if choice == "Produit":
-		choice1=="décoché"
+		choice1="décoché"
 		data = data1
 
 
@@ -604,7 +604,7 @@ def main():
 	choice1 = st.sidebar.radio("", menu1)
 
 	if choice1 == "Maintenance":
-		choice=="décoché"
+		choice="décoché"
 
 #		image = Image.open('DATAtourisme.png')
 		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
