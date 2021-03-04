@@ -293,6 +293,7 @@ def main():
 
 
 	if choice == "Produit":
+		choice1=="décoché"
 		data = data1
 
 
@@ -610,7 +611,7 @@ def main():
 
 
 		mdp = st.text_input("Mot de passe ?",type="password")
-		st.write('Dîtes "bonjour" ;)')
+		st.write('Dites "bonjour" ;)')
 
 		st.write()
 		if mdp == "bonjour":
