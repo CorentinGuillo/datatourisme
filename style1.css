@@ -9,8 +9,8 @@ section[data-testid="stSidebar"] > div {
     font-color: #FFFFFF;
 }
 
-div[role="radiogroup"] > div {
+div[role="radiogroup"] > body {
     background-color: lightgrey;
     background-image: none;
-    font-color: white;
+    color: white;
 }
