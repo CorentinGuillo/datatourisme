@@ -9,7 +9,7 @@ section[data-testid="stSidebar"] > div {
     font-color: #FFFFFF;
 }
 
-div[class="row-widget stRadio"] > div {
+div[role="radiogroup"] > div {
     background-color: lightgrey;
     background-image: none;
     font-color: white;
