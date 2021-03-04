@@ -410,7 +410,7 @@ def main():
 
 
 
-	elif choice == "Evénements":
+	elif choice == "Evénement":
 
 		data = data2
 
@@ -419,7 +419,7 @@ def main():
 #		image = Image.open('DATAtourisme.png')
 		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
 
-		st.markdown("<h1 style='text-align:center; font-size:29px; color: #57565B;'>Evénement</h1>", unsafe_allow_html=True)
+		st.markdown("<h1 style='text-align:center; font-size:29px; color: #57565B;'>Evénements</h1>", unsafe_allow_html=True)
 
 
 
