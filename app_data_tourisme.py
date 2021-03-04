@@ -645,7 +645,9 @@ def main():
 
 
 	if choice1 == "Maintenance":
-		choice = "_"
+		empty.radiobutton(choice,True)
+
+		
 
 
 #		image = Image.open('DATAtourisme.png')
