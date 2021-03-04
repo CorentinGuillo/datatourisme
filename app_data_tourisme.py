@@ -247,12 +247,11 @@ def main():
    		   st.markdown(link1, unsafe_allow_html=True)
 
 		with col2:
-   		   
-   		   st.image("cc.jpg", use_column_width=True)
-   		   st.markdown("""**Corentin&#8239;Guillo**""")
-   		   st.markdown("""*Product Owner*""")
-   		   st.markdown(link4, unsafe_allow_html=True)
-
+   		   st.image("ab.jpg", use_column_width=True)
+		   st.markdown("""**Amar&#8239;Barache**""")
+		   st.markdown("""*Equipe Tech*""")
+		   st.markdown(link5, unsafe_allow_html=True)
+		
 
 		with col3:
    		   
@@ -271,10 +270,10 @@ def main():
 
 
 		with col5:
-		   st.image("ab.jpg", use_column_width=True)
-		   st.markdown("""**Amar&#8239;Barache**""")
-		   st.markdown("""*Equipe Tech*""")
-		   st.markdown(link5, unsafe_allow_html=True)
+   		   st.image("cc.jpg", use_column_width=True)
+   		   st.markdown("""**Corentin&#8239;Guillo**""")
+   		   st.markdown("""*Product Owner*""")
+   		   st.markdown(link4, unsafe_allow_html=True)
 
 
 
@@ -609,7 +608,7 @@ def main():
 
 
 		st.write()
-		if mdp == "Les+tour1stes.":
+		if mdp == "bonjour":
 			if st.checkbox('voir dataframe'):
 				st.write(data_erreur)
 				st.markdown("")
