@@ -142,11 +142,11 @@ link4 = '[LinkedIn](https://www.linkedin.com/in/corentin-guillo-2a7a82150/)'
 link5 = '[LinkedIn](https://www.linkedin.com/in/amar-barache-bb22061b7/)'
 
 
-
+@st.cache
 def main():
 
 	menu = ["Team","Lieu d'intérêt", "Evénement", "Produit", "Itinéraire", "Maintenance"]
-	choice = st.sidebar.radio("Menu", menu)
+	st.markdown("<h4 style='text-align: left; font-size:10px; color:white;'>choice = st.sidebar.radio("Menu", menu)</h4>",unsafe_allow_html=True)
 
 	
 
