@@ -645,7 +645,7 @@ def main():
 
 
 	if choice1 == "Maintenance":
-		empty.radiobutton(choice,True)
+		st.empty().radiobutton(choice,True)
 
 		
 
