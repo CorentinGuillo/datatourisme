@@ -183,6 +183,7 @@ def main():
 	unsafe_allow_html=True
 	)	
 		
+	choice = st.empty()
 	menu = ["_","Team","Lieu d'intérêt", "Evénement", "Produit", "Itinéraire"]
 	choice = st.sidebar.radio("", menu)
 	menu1 = ["_","Maintenance"]
@@ -645,7 +646,7 @@ def main():
 
 
 	if choice1 == "Maintenance":
-		st.empty().radiobutton(choice,True)
+		choice.empty()
 
 		
 
