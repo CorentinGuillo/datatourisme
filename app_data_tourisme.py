@@ -172,25 +172,11 @@ link5 = '[LinkedIn](https://www.linkedin.com/in/amar-barache-bb22061b7/)'
 def main():
 
 	
-	st.markdown(
-	""" <style>
-	div[role="radiogroup"] >  :first-child{
-	display: none !important;
-	color: white;
-	}
-	</style>
-	""",
-	unsafe_allow_html=True
-	)	
-		
-	choice = st.empty()
-	menu = ["_","Team","Lieu d'intérêt", "Evénement", "Produit", "Itinéraire"]
-	choice = st.sidebar.radio("", menu)
-	menu1 = ["_","Maintenance"]
-	choice1 = st.sidebar.radio("", menu1)
 
-	if choice == "_":
-		pass
+		
+	menu = ["Team","Lieu d'intérêt", "Evénement", "Produit", "Itinéraire","Maintenance"]
+	choice = st.sidebar.radio("", menu)
+
 
 	if choice == "Team":
 
@@ -645,8 +631,7 @@ def main():
 
 
 
-	if choice1 == "Maintenance":
-		choice.empty()
+	if choice == "Maintenance":
 
 		
 
