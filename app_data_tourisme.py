@@ -328,7 +328,7 @@ def main():
 #		image = Image.open('DATAtourisme.png')
 		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
 
-		st.markdown("<h1 style='text-align:center; font-size:29px; color: #57565B;'>Produit</h1>", unsafe_allow_html=True)
+		st.markdown("<h1 style='text-align:center; font-size:29px; color: #57565B;'>Produits</h1>", unsafe_allow_html=True)
 
 
 
@@ -410,7 +410,7 @@ def main():
 
 
 
-	elif choice == "Evénement":
+	elif choice == "Evénements":
 
 		data = data2
 
@@ -573,7 +573,7 @@ def main():
 		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
 
 
-		st.markdown("<h1 style='text-align:center; font-size:29px; color: #57565B;'>Itinéraire</h1>", unsafe_allow_html=True)
+		st.markdown("<h1 style='text-align:center; font-size:29px; color: #57565B;'>Itinéraires</h1>", unsafe_allow_html=True)
 
 
 
