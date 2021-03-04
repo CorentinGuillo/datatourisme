@@ -619,8 +619,7 @@ def main():
 
 	elif choice1 == "Maintenance":
 		choice = "_"
-		if choice ="_":
-			pass
+
 
 #		image = Image.open('DATAtourisme.png')
 		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
