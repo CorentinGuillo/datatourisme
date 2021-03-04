@@ -146,9 +146,18 @@ link5 = '[LinkedIn](https://www.linkedin.com/in/amar-barache-bb22061b7/)'
 def main():
 
 	
+	st.markdown(
+	""" <style>
+	div[role="radiogroup"] >  :first-child{
+	display: none !important;
+	font-color: white;
+	}
+	</style>
+	""",
+	unsafe_allow_html=True
+	)	
 		
-		
-	menu = ["Team","Lieu d'intérêt", "Evénement", "Produit", "Itinéraire"]
+	menu = ["_","Team","Lieu d'intérêt", "Evénement", "Produit", "Itinéraire"]
 	choice = st.sidebar.radio("", menu)
 
 	
@@ -604,7 +613,7 @@ def main():
 	choice1 = st.sidebar.radio("", menu1)
 
 	if choice1 == "Maintenance":
-		choice=False
+		choice="_"
 
 #		image = Image.open('DATAtourisme.png')
 		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
