@@ -146,15 +146,6 @@ link5 = '[LinkedIn](https://www.linkedin.com/in/amar-barache-bb22061b7/)'
 def main():
 
 	
-	page_ft_color = '''
-	<style>
-	body {
-	font-color: white;
-	}
-	</style>
-	'''
-
-	st.markdown(page_ft_color, unsafe_allow_html=True)
 		
 		
 	menu = ["Team","Lieu d'intérêt", "Evénement", "Produit", "Itinéraire", "Maintenance"]
@@ -292,7 +283,7 @@ def main():
 		page_bg_img = '''
 		<style>
 		body {
-		background-color: #FFF6F6;
+		background-color: #FFFCFC;
 		background-size: cover;
 		}
 		</style>
