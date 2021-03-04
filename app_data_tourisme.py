@@ -143,6 +143,32 @@ link5 = '[LinkedIn](https://www.linkedin.com/in/amar-barache-bb22061b7/)'
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def main():
 
 	
@@ -162,7 +188,8 @@ def main():
 	menu1 = ["_","Maintenance"]
 	choice1 = st.sidebar.radio("", menu1)
 
-	
+	if choice == "_":
+		pass
 
 	if choice == "Team":
 
@@ -617,7 +644,7 @@ def main():
 
 
 
-	elif choice1 == "Maintenance":
+	if choice1 == "Maintenance":
 		choice = "_"
 
 
