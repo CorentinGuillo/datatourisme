@@ -201,7 +201,7 @@ def main():
    		   st.markdown("")
 
 		with col2:
-			st.markdown("A propos de ce projet : Dans le cadre de notre formation professionnelle de Data Analyst, notre équipe de 5 s'est alliée à ADN Tourisme pour proposer un état des lieux, à jour, du projet DATAtourisme, ce qui n'existait pas jusqu'alors.", unsafe_allow_html=True)   
+			st.markdown("Dans le cadre de notre formation professionnelle de Data Analyst, notre équipe de 5 s'est alliée à ADN Tourisme pour proposer un état des lieux, à jour, du projet DATAtourisme, ce qui n'existait pas jusqu'alors.", unsafe_allow_html=True)   
 
 		with col3:
 			st.markdown("")   		   
@@ -604,7 +604,7 @@ def main():
 		st.image(image, use_column_width = True, output_format = 'PNG')
 
 
-		mdp = st.text_input("Mot de passe ?")
+		mdp = st.text_input("Mot de passe ?",type="password")
 
 
 		st.write()
