@@ -355,14 +355,14 @@ def main():
 		st.plotly_chart(fig)
 
 
-#		st.markdown(""" # **Répartition des sous-categories** """)
+		st.markdown(""" # **Répartition des sous-categories** """)
 
 
-#		x = list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])#.drop("HébergementProduit",axis=0).index[0:17])
-#		y=list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])#.drop("HébergementProduit",axis=0).iloc[0:17])
-#		fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
-#		fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
-#		st.plotly_chart(fig)
+		x = list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])#.drop("HébergementProduit",axis=0).index[0:17])
+		y=list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])#.drop("HébergementProduit",axis=0).iloc[0:17])
+		fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
+		fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
+		st.plotly_chart(fig)
 
 
 
@@ -435,14 +435,14 @@ def main():
 		st.plotly_chart(fig)
 
 
-#		st.markdown(""" # **Répartition des sous-categories** """)
+		st.markdown(""" # **Répartition des sous-categories** """)
 
 
-#		x = list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])
-#		y=list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])
-#		fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
-#		fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
-#		st.plotly_chart(fig)
+		x = list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts())
+		y=list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts())
+		fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
+		fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
+		st.plotly_chart(fig)
 
 
 
@@ -517,13 +517,13 @@ def main():
 		fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 		st.plotly_chart(fig)
 
-#		st.markdown(""" # **Répartition des sous-categories** """)
+		st.markdown(""" # **Répartition des sous-categories** """)
 
-#		x = list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])
-#		y=list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])
-#		fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
-#		fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
-#		st.plotly_chart(fig)
+		x = list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])
+		y=list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])
+		fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
+		fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
+		st.plotly_chart(fig)
 
 
 
@@ -585,12 +585,13 @@ def main():
 		fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 		st.plotly_chart(fig)
 
+		st.markdown(""" # **Répartition des sous-categories** """)
 		
-#		x = list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])
-#		y=list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])
-#		fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
-#		fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
-#		st.plotly_chart(fig)
+		x = list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])
+		y=list(data.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])
+		fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
+		fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
+		st.plotly_chart(fig)
 				
 
 			
@@ -627,33 +628,33 @@ def main():
 			st.markdown("")
 			st.map(data_erreur_map)
 
-			st.markdown("<h1 style='text-align: center; font-size:29px; color:#57565B;'>Répartition des sous-categories de la categorie Lieu d'intérêt</h1>", unsafe_allow_html=True)
-			x = list(data3.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index)
-			y=list(data3.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc)
-			fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
-			fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
-			st.plotly_chart(fig)
+#			st.markdown("<h1 style='text-align: center; font-size:29px; color:#57565B;'>Répartition des sous-categories de la categorie Lieu d'intérêt</h1>", unsafe_allow_html=True)
+#			x = list(data3.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index)
+#			y=list(data3.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc)
+#			fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
+#			fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
+#			st.plotly_chart(fig)
 
-			st.markdown("<h1 style='text-align: center; font-size:29px; color:#57565B;'>Répartition des sous-categories de la categorie Lieu Evénement</h1>", unsafe_allow_html=True)
-			x = list(data2.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])
-			y=list(data2.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])
-			fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
-			fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
-			st.plotly_chart(fig)
+#			st.markdown("<h1 style='text-align: center; font-size:29px; color:#57565B;'>Répartition des sous-categories de la categorie Lieu Evénement</h1>", unsafe_allow_html=True)
+#			x = list(data2.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])
+#			y=list(data2.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])
+#			fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
+#			fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
+#			st.plotly_chart(fig)
 
-			st.markdown("<h1 style='text-align: center; font-size:29px; color:#57565B;'>Répartition des sous-categories de la categorie Produit</h1>", unsafe_allow_html=True)
-			x = list(data1.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])#.drop("HébergementProduit",axis=0).index[0:17])
-			y=list(data1.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])#.drop("HébergementProduit",axis=0).iloc[0:17])
-			fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
-			fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
-			st.plotly_chart(fig)
+#			st.markdown("<h1 style='text-align: center; font-size:29px; color:#57565B;'>Répartition des sous-categories de la categorie Produit</h1>", unsafe_allow_html=True)
+#			x = list(data1.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])#.drop("HébergementProduit",axis=0).index[0:17])
+#			y=list(data1.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])#.drop("HébergementProduit",axis=0).iloc[0:17])
+#			fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
+#			fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
+#			st.plotly_chart(fig)
 
-			st.markdown("<h1 style='text-align: center; font-size:29px; color:#57565B;'>Répartition des sous-categories de la categorie Itinéraire</h1>", unsafe_allow_html=True)
-			x = list(data4.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])
-			y=list(data4.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])
-			fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
-			fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
-			st.plotly_chart(fig)
+#			st.markdown("<h1 style='text-align: center; font-size:29px; color:#57565B;'>Répartition des sous-categories de la categorie Itinéraire</h1>", unsafe_allow_html=True)
+#			x = list(data4.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().index[0:17])
+#			y=list(data4.sous_categorie.str.split(', ',expand = True).stack().explode().value_counts().iloc[0:17])
+#			fig = px.bar(x=x,y=y,color_discrete_sequence =['#A11F40'])
+#			fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},showlegend=False,yaxis=dict(title=None), xaxis=dict(title=None,type="category"))
+#			st.plotly_chart(fig)
 		
 		
 		
