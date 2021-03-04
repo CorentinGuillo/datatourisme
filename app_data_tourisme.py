@@ -616,7 +616,7 @@ def main():
 	menu1 = ["_","Maintenance"]
 	choice = st.sidebar.radio("", menu1)
 
-	elif choice == "Maintenance":
+	if choice == "Maintenance":
 
 #		image = Image.open('DATAtourisme.png')
 		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
@@ -696,43 +696,6 @@ def main():
 		
 if __name__ == '__main__':
 		main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
