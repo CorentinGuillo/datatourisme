@@ -160,7 +160,7 @@ def main():
 	menu = ["_","Team","Lieu d'intérêt", "Evénement", "Produit", "Itinéraire"]
 	choice = st.sidebar.radio("", menu)
 	menu1 = ["_","Maintenance"]
-	choice = st.sidebar.radio("", menu1)
+	choice1 = st.sidebar.radio("", menu1)
 
 	
 
@@ -617,7 +617,7 @@ def main():
 
 
 
-	if choice == "Maintenance":
+	elif choice1 == "Maintenance":
 
 #		image = Image.open('DATAtourisme.png')
 		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
