@@ -163,7 +163,7 @@ def main():
 	
 
 	if choice == "Team":
-		choice1="_"
+
 		
 
 
@@ -303,7 +303,7 @@ def main():
 
 
 	if choice == "Produit":
-		choice1="_"
+
 		data = data1
 
 
@@ -395,7 +395,7 @@ def main():
 
 
 	elif choice == "Evénement":
-		choice1="_"
+
 		data = data2
 
 
@@ -475,7 +475,7 @@ def main():
 
 
 	elif choice == "Lieu d'intérêt":
-		choice1="_"
+
 		data = data3
 
 
@@ -547,7 +547,7 @@ def main():
 
 
 	elif choice == "Itinéraire":
-		choice1="_"
+
 		data = data4
 
 
@@ -614,10 +614,9 @@ def main():
 #		st.image(image, use_column_width = True, output_format = 'PNG')
 
 	menu1 = ["_","Maintenance"]
-	choice1 = st.sidebar.radio("", menu1)
+	choice = st.sidebar.radio("", menu1)
 
-	if choice1 == "Maintenance":
-		choice="_"
+	elif choice == "Maintenance":
 
 #		image = Image.open('DATAtourisme.png')
 		st.image('DATAtourisme.png', use_column_width = True, output_format = 'PNG')
