@@ -226,7 +226,7 @@ def main():
    		   st.markdown("")
 
 		with col2:
-			st.markdown("Dans le cadre de notre formation professionnelle de Data Analyst, **notre équipe** de 5 s'est alliée à **ADN Tourisme** pour proposer un **état des lieux** constamment à jour du **projet DATAtourisme** (qualité, quantité, points d'amélioration), ce qui n'existait pas jusqu'alors. Notre script effectue un **travail important en amont** pour récupérer, nettoyer et constuire la donnée présentée ici.", unsafe_allow_html=True)   
+			st.markdown("Dans le cadre de notre formation professionnelle de Data Analyst, **notre équipe** de 5 s'est alliée à **ADN Tourisme** pour proposer un **état des lieux** constamment à jour du **projet DATAtourisme** (qualité, quantité, points d'amélioration), ce qui n'existait pas jusqu'alors. Notre script Python effectue un **travail important en amont** pour récupérer, nettoyer et constuire la donnée présentée ici.", unsafe_allow_html=True)   
 
 		with col3:
 			st.markdown("")   		   
